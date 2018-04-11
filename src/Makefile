@@ -12,7 +12,7 @@ LBD1 = ../symlib/src
 FOUND = false
 ifeq (${F90},gfortran)  # gfortran compiler
   ifeq (${DEBUG},false)
-     FFLAGS = -O3 -ffree-line-length-none -fno-underscoring -I${LBD1} 
+     FFLAGS = -O3 -ffree-line-length-none -fno-underscoring -fdec-math -I${LBD1} 
      FOUND = true
   else
      FFLAGS = -fPIC -g -fbounds-check -Wall -ffree-line-length-none -fno-underscoring -I${LBD1} 
