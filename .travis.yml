@@ -7,7 +7,7 @@ addons:
     packages:
       - gfortran
 install:
-     - cd symlib/src && make all F90=gfortran
-     - cd src && make all F90=gfortran
+     - cd symlib/src && make all F90=gfortran && cd ../../
+     - cd src && make all F90=gfortran && cd ../
 git:
   depth: 3
