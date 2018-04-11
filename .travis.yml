@@ -8,6 +8,7 @@ addons:
       - gfortran
 install:
      - cd symlib/src && make all F90=gfortran && cd ../../
-     - cd src && make all F90=gfortran && cd ../
+# Don't make 2Dplot.x, splot.f fails due to missing sind, etc. functions in gfortran
+     - cd src && make enum.x find_structure_in_list.x makestr.x compare_enum_files.x polya.x F90=gfortran && cd ../
 git:
   depth: 3
