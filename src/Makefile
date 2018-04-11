@@ -15,7 +15,7 @@ ifeq (${F90},gfortran)  # gfortran compiler
      FFLAGS = -O3 -ffree-line-length-none -fno-underscoring -fdec-math -I${LBD1} 
      FOUND = true
   else
-     FFLAGS = -fPIC -g -fbounds-check -Wall -ffree-line-length-none -fno-underscoring -I${LBD1} 
+     FFLAGS = -fPIC -g -fbounds-check -Wall -ffree-line-length-none -fno-underscoring -fdec-math -I${LBD1} 
      FOUND = true
   endif
 endif
