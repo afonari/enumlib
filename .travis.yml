@@ -5,7 +5,7 @@ python:
 addons:
   apt:
     packages:
-      - gfortran-7
+      - gfortran
 install:
      - cd symlib/src && make all F90=gfortran && cd ../../
      - cd src && make all F90=gfortran && cd ../
